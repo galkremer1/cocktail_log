@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2015-06-02 19:13:57
+  coctail: MyString
+  ingred: MyString
+
+two:
+  date: 2015-06-02 19:13:57
+  coctail: MyString
+  ingred: MyString

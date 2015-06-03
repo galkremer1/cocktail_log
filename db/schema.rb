@@ -17,8 +17,8 @@ ActiveRecord::Schema.define(version: 20150602161357) do
     t.datetime "date"
     t.string   "coctail"
     t.string   "ingred"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

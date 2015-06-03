@@ -5,7 +5,7 @@ class CreateCoctails < ActiveRecord::Migration
       t.string :coctail
       t.string :ingred
 
-      t.timestamps null: false
+      t.timestamps 
     end
   end
 end

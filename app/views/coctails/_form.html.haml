@@ -1,6 +1,11 @@
 = simple_form_for(@coctail, html: { class: 'form-horizontal' }) do |f|
-	= f.input :date, label: "Date"
-	= f.input :coctail, label: "Coctail name", input_html: { class: "form-control" }
-	= f.input :ingred, label: "Coctail ingredients", input_html: { class: "form-control" }
-	%br/
-	= f.button :submit
+  .input-group
+    = label_tag "Date:"
+    = f.date_select :date, class: "form-control"
+  .input-group
+    = f.input :coctail, label: "Cocktail name:", input_html: { class: "form-control" }
+  .input-group
+    = f.input :ingred, label: "Cocktail ingredients:", input_html: { class: "form-control" }
+  .input-group
+    %br/
+    = f.button :submit

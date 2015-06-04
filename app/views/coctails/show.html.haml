@@ -2,3 +2,7 @@
 	%p= @coctail.date
 	%p= @coctail.coctail
 	%p= @coctail.ingred
+
+= link_to "Back", root_path |
+= link_to "Edit", edit_coctail_path(@coctail)
+= link_to "Delete", coctail_path(@coctail), method: :delete, data: {confirm: "Are you sure?"}

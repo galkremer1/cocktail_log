@@ -25,9 +25,16 @@ class CoctailsController < ApplicationController
 	end
 
 	def update
+		if @coctail.update(coctail_params)
+			redirect_to @coctail
+		else
+			render 'edit'
+		end
 	end
 
 	def destroy
+		@coctail.destroy
+		redirect_to root_path
 	end
 
 	private

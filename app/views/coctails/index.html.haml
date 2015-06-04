@@ -1,4 +1,11 @@
 %div.container
-  %div.jumbotron
-    %h1 Welcome to cocktails
-    = link_to 'Add a new cocktail', '/coctails/new'
+%div.jumbotron
+%h1 Cocktails list
+
+- @coctails.each do |coctail|
+    %h2=link_to coctail.date, coctail
+    %h3=coctail.coctail 
+
+
+= link_to 'Add a new cocktail', '/coctails/new'
+
